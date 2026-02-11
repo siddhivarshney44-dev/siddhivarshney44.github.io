@@ -1,0 +1,180 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f5f7fa, #e4ecf7);
+  color: #1f2933;
+  line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 20px;
+  animation: fadeDown 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #cbd5f5;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 1s ease forwards;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #0f172a;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #2563eb;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* ===== SKILLS ===== */
+.skills,
+.why-me {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.skills li,
+.why-me li {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #e0e7ff, #eef2ff);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skills li:hover,
+.why-me li:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+}
+
+/* ===== PROJECTS ===== */
+.project {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border-left: 5px solid #2563eb;
+  transition: all 0.35s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.2);
+  background: white;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.project p {
+  font-size: 15px;
+  color: #374151;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.project a:hover {
+  background: #1d4ed8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 50px;
+  padding: 25px;
+  text-align: center;
+  background: #0f172a;
+  color: #cbd5f5;
+}
+
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 20px;
+    padding: 22px;
+  }
+}
